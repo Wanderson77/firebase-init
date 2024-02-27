@@ -1,0 +1,78 @@
+[debug] [2023-01-31T10:33:45.108Z] ----------------------------------------------------------------------
+[debug] [2023-01-31T10:33:45.111Z] Command:       /usr/local/bin/firebase /home/aldo/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2023-01-31T10:33:45.111Z] CLI Version:   11.20.0
+[debug] [2023-01-31T10:33:45.112Z] Platform:      linux
+[debug] [2023-01-31T10:33:45.112Z] Node Version:  v16.16.0
+[debug] [2023-01-31T10:33:45.117Z] Time:          Tue Jan 31 2023 07:33:45 GMT-0300 (GMT-03:00)
+[debug] [2023-01-31T10:33:45.117Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-31T10:33:45.121Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-01-31T10:33:45.204Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-31T10:33:45.204Z] > authorizing via signed-in user (wanderson.aldo@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/aldo/developer/firebase/cli/init
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2023-01-31T10:33:45.791Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-01-31T10:33:45.792Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-31T10:34:31.431Z] Using project from CLI flag: rnlovefb
+[debug] [2023-01-31T10:34:31.432Z] > refreshing access token with scopes: []
+[debug] [2023-01-31T10:34:31.435Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-31T10:34:31.435Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-31T10:34:31.794Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-01-31T10:34:31.794Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-31T10:34:31.804Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rnlovefb [none]
+[debug] [2023-01-31T10:34:32.596Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rnlovefb 200
+[debug] [2023-01-31T10:34:32.596Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rnlovefb {"projectId":"rnlovefb","projectNumber":"379779084163","displayName":"rnlovefb","name":"projects/rnlovefb","resources":{"hostingSite":"rnlovefb"},"state":"DELETED","etag":"1_89a9ff50-6c35-46fa-a60e-0894224bbd4a"}
+[info] i  Using project rnlovefb (rnlovefb) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-01-31T10:35:01.548Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-01-31T10:35:01.750Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-01-31T10:35:01.751Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.16.0","browserURL":"https://www.gstatic.com/firebasejs/9.16.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.16.0/firebase.tgz"},"live":{"version":"9.16","browserURL":"https://www.gstatic.com/firebasejs/live/9.16/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.16/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.16.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.16.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.16.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.16.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.16.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.16.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.16.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.16.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.16.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.16.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote y/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /home/aldo/developer/firebase/cli/init is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=730603232&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-01-31T10:35:20.341Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-01-31T10:35:20.341Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-01-31T10:35:20.734Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-01-31T10:35:20.735Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-01-31T10:35:20.748Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-01-31T10:35:21.147Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-01-31T10:35:21.147Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Wanderson77","id":10963220,"node_id":"MDQ6VXNlcjEwOTYzMjIw","avatar_url":"https://avatars.githubusercontent.com/u/10963220?v=4","gravatar_id":"","url":"https://api.github.com/users/Wanderson77","html_url":"https://github.com/Wanderson77","followers_url":"https://api.github.com/users/Wanderson77/followers","following_url":"https://api.github.com/users/Wanderson77/following{/other_user}","gists_url":"https://api.github.com/users/Wanderson77/gists{/gist_id}","starred_url":"https://api.github.com/users/Wanderson77/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Wanderson77/subscriptions","organizations_url":"https://api.github.com/users/Wanderson77/orgs","repos_url":"https://api.github.com/users/Wanderson77/repos","events_url":"https://api.github.com/users/Wanderson77/events{/privacy}","received_events_url":"https://api.github.com/users/Wanderson77/received_events","type":"User","site_admin":false,"name":"Wanderson Aldo","company":"CEO at RioApps","blog":"https://www.linkedin.com/in/wanderson-aldo-86726153/","location":"São Gonçalo - Rio de Janeiro","email":"wanderson.aldo@gmail.com","hireable":null,"bio":"React Native, Firebase, TypeScript e GraphQL","twitter_username":null,"public_repos":13,"public_gists":0,"followers":22,"following":155,"created_at":"2015-02-11T17:28:58Z","updated_at":"2023-01-17T22:58:15Z","private_gists":1,"total_private_repos":1,"owned_private_repos":1,"disk_usage":39612,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as Wanderson77 
+[info] 
+[debug] [2023-01-31T10:36:06.504Z] Error: read EIO
+    at TTY.onStreamRead (node:internal/stream_base_commons:217:20)
+[error] 
+[error] Error: An unexpected error has occurred.
